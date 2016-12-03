@@ -1,0 +1,9 @@
+default: &default
+  GMAIL_EMAIL: ""
+  GMAIL_PASSWORD: ''
+
+development:
+  <<: *default
+  SECRET_KEY_BASE: e8a8dd0cb4b47c3a4537ae644d0604d929854db5c9daa0d4601de7bee4f2ef5767a66592f1b1747d4924dcde97fde76ea66b6b149e8b4ae85834703731f34e8a
+  SECRET_TOKEN: 644d0604d929854db5c9daa0d4601de7bee4f
+  REDIS_PATH:     "redis://127.0.0.1:6379/1"
